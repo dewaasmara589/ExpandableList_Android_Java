@@ -9,7 +9,7 @@
         android:id="@+id/kode"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintWidth_percent="0.15"
+        app:layout_constraintWidth_percent="0.2"
         android:textColor="@color/black"
         android:paddingVertical="7dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -27,12 +27,25 @@
 
     <TextView
         android:id="@+id/jumlah"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintWidth_percent="0.1"
+        android:gravity="center"
+        android:textAlignment="center"
         android:textColor="@color/black"
-        android:paddingVertical="7dp"
+        android:background="@drawable/bg_circletext"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/name"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/jumlah"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

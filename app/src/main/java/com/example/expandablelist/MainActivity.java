@@ -1,6 +1,7 @@
 package com.example.expandablelist;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
@@ -60,17 +61,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
-            @Override
-            public boolean onChildClick(ExpandableListView parent, View v,
-                                        int groupPosition, int childPosition, long id) {
-                Toast.makeText(
-                                getApplicationContext(),
-                                expandableListTitle.get(groupPosition) + " -> " + expandableListDetail.get(expandableListTitle.get(groupPosition)).get(childPosition), Toast.LENGTH_SHORT
-                        )
-                        .show();
-                return false;
-            }
-        });
+//        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+//            @Override
+//            public boolean onChildClick(ExpandableListView parent, View v,
+//                                        int groupPosition, int childPosition, long id) {
+//                Toast.makeText(getApplicationContext(),
+//                                expandableListTitle.get(groupPosition) + " -> " +
+//                                        expandableListDetail.get(expandableListTitle.get(groupPosition)).get(childPosition),
+//                                Toast.LENGTH_SHORT
+//                        ).show();
+//                return false;
+//            }
+//        });
     }
 }
